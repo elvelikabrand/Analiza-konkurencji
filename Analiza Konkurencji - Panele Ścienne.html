@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analiza Konkurencji - Panele Ścienne</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+            color: #222;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+        
+        .competitors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .competitor-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .competitor-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .competitor-name {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #222;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .info-row {
+            margin-bottom: 18px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 6px;
+            display: block;
+        }
+        
+        .info-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #444;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin-top: 20px;
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th {
+            background: #f8f8f8;
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .comparison-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #fafafa;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .color-palette {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        
+        .color-swatch {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .color-swatch:hover {
+            transform: scale(1.1);
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #222;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        @media (max-width: 768px) {
+            .competitors-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analiza Wizualna Konkurencji</h1>
+        <p class="subtitle">Analiza branding i design głównych konkurentów MODULARE w segmencie paneli ściennych</p>
+        
+        <div class="section-title">Szczegółowa Analiza Konkurentów</div>
+        
+        <div class="competitors-grid">
+            <!-- EMURO.PL -->
+            <div class="competitor-card">
+                <div class="competitor-name"><a href="https://emuro.pl" target="_blank">emuro.pl</a></div>
+                
+                <div class="info-row">
+                    <span class="info-label">O kompanii</span>
+                    <div class="info-text">Emuro sprzedaje dekoracyjne panele WPC, lamele i profile do wykończenia ścian; akcent na nowoczesny, praktyczny dekor wnętrz.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Misja / Pozycjonowanie</span>
+                    <div class="info-text">Obiecują styl i funkcjonalność oraz wyjątkowe wnętrza — pragmatyczny, ale estetyczny upgrade przestrzeni.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Usługi / Asortyment</span>
+                    <div class="info-text">Kategorie: panele WPC, profile dekoracyjne, lamele, sekcja realizacji z case studies, sklep online z filtrami.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Logo</span>
+                    <div class="info-text">Słowny znak bez ikony, nowoczesny grotesk; wrażenie technologiczności i prostoty, dobrze czytelne w nagłówku.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Styl</span>
+                    <div class="info-text">Minimalistyczny: dużo przestrzeni, duże zdjęcia wnętrz, czyste karty produktów; wygląda jak marka interieru, a nie sklep budowlany.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Typografia</span>
+                    <div class="info-text">Geometryczny / neo-grotesk z dobrą czytelności; połączenie tłustszych nagłówków i lekkiego tekstu.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Paleta Kolorów</span>
+                    <div class="info-text">Jasne tło (biały/bardzo jasny szary), naturalne beżowo-drewniane tony.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Kolory</span>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background: #000000; border: 2px solid #ddd;" title="Biały"></div>
+                        <div class="color-swatch" style="background: #b88642;" title="Bardzo jasny szary"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- IN-DECOR.EU -->
+            <div class="competitor-card">
+                <div class="competitor-name"><a href="https://in-decor.eu" target="_blank">in-decor.eu</a></div>
+                
+                <div class="info-row">
+                    <span class="info-label">O kompanii</span>
+                    <div class="info-text">In-Decor sprzedaje dekoracyjne panele ścienne imitujące kamień, beton, trawertyn, skierowane na domy i wnętrza komercyjne.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Misja / Pozycjonowanie</span>
+                    <div class="info-text">Komunikacja skupiona na wygodzie zakupów.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Usługi / Asortyment</span>
+                    <div class="info-text">Linie paneli PU Hard i Soft, różne faktury; sklep online z cenami, dostępnością, parametrami. Sekcja logowania dla klientów.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Logo</span>
+                    <div class="info-text">Słowny znak (In-Decor) z lakoniczną grafiką; wygląda jak brand budowlany/dekor w średnim segmencie cenowym.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Styl</span>
+                    <div class="info-text">Bardziej komercyjny e-commerce: gęste bloki produktów, promocyjne bannery, mniej lifestyle'owych zdjęć, więcej sklepowego wrażenia.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Typografia</span>
+                    <div class="info-text">Standardowy web-grotesk; nagłówki większe, ale wizualnie mniej premium wrażenie prostoty i użytkowości.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Paleta Kolorów</span>
+                    <div class="info-text">Białe tło, ciemno-szary/czarny tekst, jasne akcenty (przyciski, ceny) odcienie pomarańczowego dla podkreślenia ofert.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Kolory</span>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background: #eb5103; border: 2px solid #ddd;" title="Biały"></div>
+                        <div class="color-swatch" style="background: #000000;" title="Ciemno-szary"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- LIVINGHOME-PLYTKI.PL -->
+            <div class="competitor-card">
+                <div class="competitor-name"><a href="https://livinghome-plytki.pl" target="_blank">livinghome-plytki.pl</a></div>
+                
+                <div class="info-row">
+                    <span class="info-label">O kompanii</span>
+                    <div class="info-text">Living Home specjalizuje się w płytkach i materiałach podłogowych; wirtualna witryna sklepu z naciskiem na płytki ceramiczne.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Misja / Pozycjonowanie</span>
+                    <div class="info-text">Komunikacja wokół szerokiego asortymentu i wygody wyboru.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Usługi / Asortyment</span>
+                    <div class="info-text">Kategorie: płytki łazienkowe, kuchenne, imitacja drewna, mozaiki; wiele kart z filtrami po kolekcjach, rozmiarach, kolorach.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Logo</span>
+                    <div class="info-text">Kombinacja tekstu Living Home i ikony domku lub płytki; wizualnie kojarzy się z detalicznym sklepem materiałów budowlanych.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Styl</span>
+                    <div class="info-text">Klasyczny sklep internetowy: siatka produktów, banery akcji, suwaki; mniej indywidualności, nacisk na funkcjonalność witryny.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Typografia</span>
+                    <div class="info-text">Prosty sans-serif, gęste teksty i cenniki; wizualnie przeciążony w porównaniu z bardziej lotnym brandami paneli.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Paleta Kolorów</span>
+                    <div class="info-text">Białe tło, ciemny tekst, akcenty firmowych kolorów (szaro-niebieski/bordowy) w przyciskach, nagłówku i promocyjnych bannerach.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Kolory</span>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background: #cc3332; border: 2px solid #ddd;" title="Biały"></div>
+                        <div class="color-swatch" style="background: #303137;" title="Ciemny tekst"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MURSO.PL -->
+            <div class="competitor-card">
+                <div class="competitor-name"><a href="https://murso.pl" target="_blank">murso.pl</a></div>
+                
+                <div class="info-row">
+                    <span class="info-label">O kompanii</span>
+                    <div class="info-text">Murso oferuje dekoracyjne panele ścienne i lamele do wnętrz; podobny segment z Emuro i In-Decor.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Misja / Pozycjonowanie</span>
+                    <div class="info-text">Orientacja na modern design i łatwość montażu; wizualnie dąży do wyglądu trendowego brandu interieru, a nie czysto budowlanego sklepu.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Usługi / Asortyment</span>
+                    <div class="info-text">Panele, lamele, akcesoria; katalog online z sekcjami typów produktów i referencjami zrealizowanych projektów.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Logo</span>
+                    <div class="info-text">Lakoniczny znak z krótką nazwą Murso; wygląda kompaktnie i skaluje się dobrze w sieci i na podglądach zdjęć.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Styl</span>
+                    <div class="info-text">Nowoczesny: duże mood-zdjęcia wnętrz, wiele beżowych i ciepłych tonów, schludne karty produktów, dobra praca z pustą przestrzenią.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Typografia</span>
+                    <div class="info-text">Czysty grotesk, wizualnie bliżej lifestyle-brandów; duże nagłówki, dużo powietrza, krótkie, podzielone teksty.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Paleta Kolorów</span>
+                    <div class="info-text">Jasne tło, szare odcienie, akcent ciemny (czarny/antracyt) dla tekstu i przycisków; zdjęcia z naturalną drewnianą fakturą dodają drogiego wyglądu. &quot;drogiego&quot; wyglądu.</div>
+                </div>
+                
+                <div class="info-row">
+                    <span class="info-label">Kolory</span>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background: #000000;" title="Beż"></div>
+                        <div class="color-swatch" style="background: #eaeaea;" title="Ciepłe jasne tło"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-title">Tabela Porównawcza</div>
+        
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parametr</th>
+                        <th>emuro.pl</th>
+                        <th>in-decor.eu</th>
+                        <th>livinghome-plytki.pl</th>
+                        <th>murso.pl</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Kierunek</strong></td>
+                        <td>Panele WPC, lamele</td>
+                        <td>Panele pod kamień/beton</td>
+                        <td>Płytki ceramiczne</td>
+                        <td>Panele i lamele</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ton Wizualny</strong></td>
+                        <td>Minimalizm, styl interieru</td>
+                        <td>Komercyjny e-commerce</td>
+                        <td>Klasyczny sklep budowlany</td>
+                        <td>Nowoczesny lifestyle-brand</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nacisk w Wiadomościach</strong></td>
+                        <td>Styl + funkcjonalność</td>
+                        <td>Szybka dostawa i serwis</td>
+                        <td>Szeroki wybór i cena</td>
+                        <td>Design i trendowość</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Identyka</strong></td>
+                        <td>Czysty wordmark, spokojne kolory</td>
+                        <td>Prosty logo, jasne akcenty</td>
+                        <td>Domowy/detaliczny logo</td>
+                        <td>Nowoczesny logo, ciepła paleta</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kolor Główny</strong></td>
+                        <td>Zielony / Szary</td>
+                        <td>Pomarańczowy / Żółty</td>
+                        <td>Niebieski / Bordowy</td>
+                        <td>Beż / Antracyt</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wrażenie Ogólne</strong></td>
+                        <td>Premium, „powietrzny"</td>
+                        <td>Funkcjonalny, „prosty"</td>
+                        <td>Przeciążony, tradycyjny</td>
+                        <td>Luksusowy, nowoczesny</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
